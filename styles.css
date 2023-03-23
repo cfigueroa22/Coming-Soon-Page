@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "logo" "text" "email" "board";
+  grid-template-columns: 1fr;
+  margin: 5em 8em;
+}
+
+.logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.main-text {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.main-text h1 {
+  margin-bottom: 0.5em;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 59%);
+}
+
+.soon-text {
+  font-weight: 600;
+  color: hsl(209, 33%, 12%);
+}
+
+.main-text h3 {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.email-address {
+  grid-area: email;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5em;
+}
+
+.email {
+  padding: 1em;
+  width: 35%;
+  border-radius: 20px;
+  border: 1px solid hsl(0, 0%, 59%);
+  margin-right: 1em;
+}
+
+.email-address button {
+  padding: 3px 45px;
+  border-radius: 20px;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  border: 1px solid hsl(223, 87%, 63%);
+  cursor: pointer;
+}
+
+.dashboard {
+  grid-area: board;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard img {
+  width: 70%;
+}
